@@ -1,0 +1,61 @@
+// Mess menu
+
+! version = 2.0
+//python macros
+/*
+> object time python
+    from time import localtime, strftime
+    return strftime("%a, %d %b %Y %X", localtime())
+< object
+
+
+> object day python
+    from time import localtime, strftime
+    return strftime("%a", localtime())
+< object
+
+//needs some debugging
+> object meal python
+    from time import localtime, strftime
+    if int(strftime("%H", localtime())) > 9 and int(strftime("%M", localtime())) > 30 and int(strftime("%H", localtime())) < 14:
+      return "lunch"
+    elif int(strftime("%H", localtime())) > 14 and int(strftime("%H", localtime()))<19:
+      return "dinner"
+    elif int(strftime("%H", localtime())) > 21 and int(strftime("%H", localtime()))<9:
+      return "breakfast"
+    else :
+      return strftime("%H", localtime())
+< object
+*/
+
+//Javascript macros
+> object time javascript
+var now = new Date();
+return now;
+< object
+
+> object meal javascript
+  var now = new Date();
+    if (now.getHours() > 9 && now.getMinutes() > 30 && now.getHours() < 14)
+      return "lunch";
+    else if (now.getHours() > 14 && now.getHours()<19)
+      return "dinner";
+    else if (now.getHours() > 21 || now.getHours()<9)
+      return "breakfast";
+    else
+      return now.getHours();
+< object
+
+> object day javascript
+  var now = new Date();
+  return now.getDay();
+< object
+
++ time
+- <call>time</call>
+
++ meal
+- <call>meal</call>
+
++ day
+- <call>day</call>
