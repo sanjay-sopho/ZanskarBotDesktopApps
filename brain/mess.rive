@@ -38,7 +38,7 @@ return now;
   var now = new Date();
     if (now.getHours() > 9 && now.getMinutes() > 30 && now.getHours() < 14)
       return "lunch";
-    else if (now.getHours() > 14 && now.getHours()<19)
+    else if (now.getHours() > 14 && now.getHours()<21)
       return "dinner";
     else if (now.getHours() > 21 || now.getHours()<9)
       return "breakfast";
@@ -51,10 +51,10 @@ return now;
   return now.getDay();
 < object
 
-+ time
++ [*] time [*]
 - <call>time</call>
 
-+ meal
++ [*] (meal|khana|khane) [*]
 - <call>meal</call>
 
 + day

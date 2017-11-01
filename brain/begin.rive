@@ -9,11 +9,11 @@
 ! var master = localuser
 
 // Bot Variables
-! var name     = SG
-! var fullname = SG
+! var name     = ZanskarBot
+! var fullname = ZanskarBot
 ! var age      = 19
 ! var birthday = July 13
-! var sex      = (@malenounw)
+! var sex      = (@malenoun)
 ! var location = Delhi
 ! var city     = Delhi
 ! var eyes     = blue

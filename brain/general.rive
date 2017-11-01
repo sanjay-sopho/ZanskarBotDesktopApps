@@ -7,7 +7,8 @@
 - Does talking about this bother you?
 - Yaar ye kya bol diya???
 - Hearing this first time in my whole life.
-- Please be more meaningful. Aisi baten bolo jo samajh ayen.
+- Please be more meaningful.
+- I don't understand.
 
 + [*] (sorry|apologize|apology) [*]
 - Please don't apologize.
@@ -66,6 +67,10 @@
 - Good.
 - Thik hai.
 
++ [*]thank[*]
+- Welcome.
+- You're welcome.
+- No problem.
 
 + [*] i dreamed *
 - Really, <star>?
@@ -321,7 +326,6 @@
 //sorry topic
 > topic sorry
 
-  // This will match if the word "sorry" exists ANYWHERE in their message
   + [*] sorry [*]
   - It's OK, I'll forgive you!{topic=random}
 
