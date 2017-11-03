@@ -1,0 +1,153 @@
+//Secretaries
+
+
+// Names
+
+! var mess        = Abhinav Chatterjee
+! var maintenance = Pradeep Kumar
+! var sport       = Rajat Kharbanda
+! var cult        = Sankalp Katiyar
+! var library     = Sumeet Khandelwal
+! var common_room = Tarun Gupta
+! var computer_room = Udit Singla
+! var house       = Vaibhav Gupta
+
+
+//Contact numbers
+! var mess_c          = 9599460657
+! var maintenance_c   = 9560942241
+! var sport_c         = 8447125448
+! var cult_c          = 9582059505
+! var library_c       = 9560942114
+! var common_room_c   = 9560936093
+! var computer_room_c = 9560933391
+! var house_c         = 9971752325
+
+//emails
+! var mess_e          = mez148337@mech.iitd.ac.in
+! var maintenance_e   = me2150750@gmail.com
+! var sport_e         = rajat497kharbanda@gmail.com
+! var cult_e          = sankalpkatiyar.com@gmail.com
+! var library_e       = sumeet1aug@gmail.com
+! var common_room_e   = guptatarun690@gmail.com
+! var computer_room_e = udit.singla97@gmail.com
+! var house_e         = mt6140569@iitd.ac.in
+
+! local concat = newline
+
++ [*](mess|house|library) (secy|secretary)[*]{weight=10}
+- Name: <bot <star1>>
+^ Phone: <bot <star1>_c>
+^ Email: <bot <star1>_e>
+
+
++ [*](maint|maintenance) (secy|secretary)[*]{weight=10}
+- Name: <bot maintenance>
+^ Phone: <bot maintenance_c>
+^ Email: <bot maintenance_e>
+
+
++ [*](common|computer) room (secy|secretary)[*]{weight=10}
+- Name: <bot <star1>_room>
+^ Phone: <bot <star1>_room_c>
+^ Email: <bot <star1>_room_e>
+
+
++ [*](sport|sports) (secy|secretary)[*]{weight=10}
+- Name: <bot sport>
+^ Phone: <bot sport_c>
+^ Email: <bot sport_e>
+
+
++ [*](cultural|cult) (secy|secretary)[*]{weight=10}
+- Name: <bot cult>
+^ Phone: <bot cult_c>
+^ Email: <bot cult_e>
+
+
+
+//Representatives
+
+
+//Names
+
+! var music       = Anshuman Srivastava
+! var drama       = Kishan Patel
+! var lit         = Nitin Yadav
+! var hindi       = Prabhat Kanaujia
+! var pfc         = Priyank
+! var fac         = Ravi Singh
+! var dance       = Sandesh Sen
+! var debating    = Udit Raj Singh
+! var quizzing    = Utkarsh Prajapati
+! var isc         = Kumar Shubham
+! var bsw1        = Deepak Chaurasia
+! var bsw2        = Nishant Verma
+! var sac1        = Shubham Verma
+! var sac2        = Rishabh Mohan Sharma
+
+//Contacts
+! var music_c       = 8826006145
+! var drama_c       = 8826011527
+! var lit_c         = 9671714320
+! var hindi_c       = 9711611715
+! var pfc_c         = 8002619449
+! var fac_c         = 9891029591
+! var dance_c       = 9782952843
+! var debating_c    = 9458828894
+! var quizzing_c    = 8826010396
+! var isc_c         = 9810741794
+! var bsw1_c        = 9891049811
+! var bsw2_c        = 7551173791
+! var sac1_c        = 8290832434
+! var sac2_c        = 8588965307
+
+//Email
+! var music_e       = anshumans279@gmail.com
+! var drama_e       = patelkishan651@gmail.com
+! var lit_e         = nitinyadavjps@gmail.com
+! var hindi_e       = 1808prabhat@gmail.com
+! var pfc_e         = priyank.pgs@gmail.com
+! var fac_e         = ravisinghiitd03@gmail.com
+! var dance_e       = sandeshsen52@gmail.com
+! var debating_e    = uditraj1199@gmail.com
+! var quizzing_e    = utkarshprajapati2709@gmail.com
+! var isc_e         = shubh.iitd16@gmail.com
+! var bsw1_e        = Deepak.chaurasia1998@gmail.com
+! var bsw2_e        = nishantverma311@gmail.com
+! var sac1_e        = shubhamverma131197@gmail.com
+! var sac2_e        = shivrishabh2596@gmail.com
+
+! local concat = newline
+
++ [*](music|drama|pfc|fac|dance|debating|quizzing|isc) (rep|representative)[*]{weight=10}
+- Name: <bot <star1>>
+^ Phone: <bot <star1>_c>
+^ Email: <bot <star1>_e>
+
++ [*](lit|literary) (rep|representative)[*]{weight=10}
+- Name: <bot lit>
+^ Phone: <bot lit_c>
+^ Email: <bot lit_e>
+
++ [*]hindi [samiti] (rep|representative)[*]{weight=10}
+- Name: <bot hindi>
+^ Phone: <bot hindi_c>
+^ Email: <bot hindi_e>
+
++ [*]bsw (rep|representative)[*]{weight=10}
+- Name: <bot bsw1>
+^ Phone: <bot bsw1_c>
+^ Email: <bot bsw1_e>
+^ Name: <bot bsw2>
+^ Phone: <bot bsw2_c>
+^ Email: <bot bsw2_e>
+
+
++ [*]sac (rep|representative)[*]{weight=10}
+- Name: <bot sac1>
+^ Phone: <bot sac1_c>
+^ Email: <bot sac1_e>
+^ Name: <bot sac2>
+^ Phone: <bot sac2_c>
+^ Email: <bot sac2_e>
